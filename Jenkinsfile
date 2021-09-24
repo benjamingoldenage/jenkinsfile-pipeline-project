@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('run') {
             steps {
-                echo "Clarusway_Way to Reinvent Yourself. good afternoon"
-                sh 'echo using shell within Jenkinsfile'
-                echo 'not using shell in the Jenkinsfile. benjamin. david'
+                echo 'Clarusway_Way to Reinvent Yourself'
+                sh 'python --version'
+                sh 'python pipeline.py'
             }
         }
     }
